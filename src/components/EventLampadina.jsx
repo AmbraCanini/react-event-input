@@ -8,7 +8,7 @@ function EventLampadina() {
     return (
         <div>
             <button onClick={cambiaStato}>
-                Cambia stato
+                {accesa ? "Spegni" : "Accendi"}
             </button>
               <p className={accesa ? "accesa" : "spenta"}>  </p>
             {accesa ? <p>Lampadina accesa</p> : <p>Lampadina spenta</p>}
